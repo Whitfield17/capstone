@@ -64,7 +64,7 @@ class AuthViewModel: ObservableObject {
                     self.fetchUser()
                 }
             } else {
-                let businessesDocRef = Constants.businessesCollection.document()
+                let businessesDocRef = Constants.COLLECTION_BUSINESSES.document()
                 
                 let data = ["email": email,
                             "firstName": firstName,

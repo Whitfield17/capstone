@@ -27,7 +27,7 @@ class BusinessViewModel: ObservableObject {
     func uploadBusiness(businessName: String, description: String, websiteUrl: String, email: String, phoneNumber: String, address: String, city: String, province: String, openMonday: Bool, mondayStartTime: Date, mondayEndTime: Date, openTuesday: Bool, tuesdayStartTime: Date, tuesdayEndTime: Date, openWednesday: Bool, wednesdayStartTime: Date, wednesdayEndTime: Date, openThursday: Bool, thursdayStartTime: Date, thursdayEndTime: Date, openFriday: Bool, fridayStartTime: Date, fridayEndTime: Date, openSaturday: Bool, saturdayStartTime: Date, saturdayEndTime: Date, openSunday: Bool, sundayStartTime: Date, sundayEndTime: Date) {
         
         guard let user = AuthViewModel.shared.user else { return }
-        let businessesDocRef = Constants.businessesCollection.document(user.businessId)
+        let businessesDocRef = Constants.COLLECTION_BUSINESSES.document(user.businessId)
         
         //Get the latitude and longitude based off the given address string
         getCoordinate(address: address, city: city, province: province) { (location, error) in
@@ -82,7 +82,7 @@ class BusinessViewModel: ObservableObject {
         guard let user = AuthViewModel.shared.user else { return }
         
 //        Going into the users collection in Firestore, and finds the uid document for the current user
-        Firestore.firestore().collection("businesses").document(user.businessId).getDocument { [self] (snapshot, _) in
+        Constants.COLLECTION_BUSINESSES.document(user.businessId).getDocument { [self] (snapshot, _) in
 //            Getting the data returned back from Firestore
             guard let data = snapshot?.data() else { return }
             self.business = Business(dictionary: data)

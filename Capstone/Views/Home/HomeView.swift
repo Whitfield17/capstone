@@ -14,6 +14,8 @@ struct HomeView: View {
     @EnvironmentObject var authViewModel: AuthViewModel
     @StateObject var businessViewModel = BusinessViewModel()
     
+    @State var selectedBusiness: Business?
+    
     @State var isMapShowing = false
     @Binding var selectedIndex: Int
         
@@ -39,7 +41,7 @@ struct HomeView: View {
                         Image(systemName: "list.bullet")
                     }.tag(1)
                 
-                BusinessMapView()
+                BusinessMapView(selectedBusiness: $selectedBusiness)
                     .onTapGesture {
                         selectedIndex = 2
                     }

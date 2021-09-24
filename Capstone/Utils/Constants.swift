@@ -13,8 +13,10 @@ struct Constants {
     static let blue = Color(red: 0/255, green: 130/255, blue: 167/255)
     static let turquoise = Color(red: 55/255, green: 197/255, blue: 192/255)
     
-    static let usersCollection = Firestore.firestore().collection("users")
-    static let businessesCollection = Firestore.firestore().collection("businesses")
+    static let COLLECTION_USERS = Firestore.firestore().collection("users")
+    static let COLLECTION_BUSINESSES = Firestore.firestore().collection("businesses")
+    
+    static var ANNOTATION_REUSE_ID = "business"
     
     enum AccountType {
         case personal

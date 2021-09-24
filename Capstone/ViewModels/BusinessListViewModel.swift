@@ -16,7 +16,7 @@ class BusinessListViewModel: ObservableObject {
     }
     
     func fetchBusinesses() {
-        Firestore.firestore().collection("businesses").getDocuments { (snapshot, error) in
+        Constants.COLLECTION_BUSINESSES.getDocuments { (snapshot, error) in
             if let error = error {
                 print("Error getting documents: \(error)")
             } else {
