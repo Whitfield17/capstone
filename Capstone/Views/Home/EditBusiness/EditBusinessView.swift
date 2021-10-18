@@ -88,6 +88,57 @@ struct EditBusinessView: View {
                         
                     }
                     .padding()
+                    
+                    VStack {
+                        EditHoursView(day: "Monday", isOpen: $openMonday, startTime: $mondayStartTime, endTime: $mondayEndTime)
+                            .onAppear {
+                                self.openMonday = businessViewModel.business?.openMonday ?? false
+                                self.mondayStartTime = businessViewModel.business?.mondayStartTime.dateValue() ?? Date()
+                                self.mondayEndTime = businessViewModel.business?.mondayEndTime.dateValue() ?? Date()
+                            }
+                        
+                        EditHoursView(day: "Tuesday", isOpen: $openTuesday, startTime: $tuesdayStartTime, endTime: $tuesdayEndTime)
+                            .onAppear {
+                                self.openTuesday = businessViewModel.business?.openTuesday ?? false
+                                self.tuesdayStartTime = businessViewModel.business?.tuesdayStartTime.dateValue() ?? Date()
+                                self.tuesdayEndTime = businessViewModel.business?.tuesdayEndTime.dateValue() ?? Date()
+                            }
+                        
+                        EditHoursView(day: "Wednesday", isOpen: $openWednesday, startTime: $wednesdayStartTime, endTime: $wednesdayEndTime)
+                            .onAppear {
+                                self.openWednesday = businessViewModel.business?.openWednesday ?? false
+                                self.wednesdayStartTime = businessViewModel.business?.wednesdayStartTime.dateValue() ?? Date()
+                                self.wednesdayEndTime = businessViewModel.business?.wednesdayEndTime.dateValue() ?? Date()
+                            }
+                        
+                        EditHoursView(day: "Thursday", isOpen: $openThursday, startTime: $thursdayStartTime, endTime: $thursdayEndTime)
+                            .onAppear {
+                                self.openThursday = businessViewModel.business?.openThursday ?? false
+                                self.thursdayStartTime = businessViewModel.business?.thursdayStartTime.dateValue() ?? Date()
+                                self.thursdayEndTime = businessViewModel.business?.thursdayEndTime.dateValue() ?? Date()
+                            }
+                        
+                        EditHoursView(day: "Friday", isOpen: $openFriday, startTime: $fridayStartTime, endTime: $fridayEndTime)
+                            .onAppear {
+                                self.openFriday = businessViewModel.business?.openFriday ?? false
+                                self.fridayStartTime = businessViewModel.business?.fridayStartTime.dateValue() ?? Date()
+                                self.fridayEndTime = businessViewModel.business?.fridayEndTime.dateValue() ?? Date()
+                            }
+                        
+                        EditHoursView(day: "Saturday", isOpen: $openSaturday, startTime: $saturdayStartTime, endTime: $saturdayEndTime)
+                            .onAppear {
+                                self.openSaturday = businessViewModel.business?.openSaturday ?? false
+                                self.saturdayStartTime = businessViewModel.business?.saturdayStartTime.dateValue() ?? Date()
+                                self.saturdayEndTime = businessViewModel.business?.saturdayEndTime.dateValue() ?? Date()
+                            }
+                        
+                        EditHoursView(day: "Sunday", isOpen: $openSunday, startTime: $sundayStartTime, endTime: $sundayEndTime)
+                            .onAppear {
+                                self.openSunday = businessViewModel.business?.openSunday ?? false
+                                self.sundayStartTime = businessViewModel.business?.sundayStartTime.dateValue() ?? Date()
+                                self.sundayEndTime = businessViewModel.business?.sundayEndTime.dateValue() ?? Date()
+                            }
+                    }
                 }
             }
 

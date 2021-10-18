@@ -18,7 +18,7 @@ struct BusinessListView: View {
                         destination: BusinessDetailView(business: business),
                         label: {
                             BusinessCell(business: business)
-                        })
+                        }).foregroundColor(.black)
                 }
             }
             .padding()
