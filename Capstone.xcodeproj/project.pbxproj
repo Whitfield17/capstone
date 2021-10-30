@@ -37,6 +37,17 @@
 		4026873826FCFFDD00016BB7 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4026873726FCFFDD00016BB7 /* BusinessCell.swift */; };
 		4026873B26FD009200016BB7 /* BusinessDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4026873A26FD009200016BB7 /* BusinessDetailView.swift */; };
 		4026874026FE383E00016BB7 /* BusinessMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4026873F26FE383E00016BB7 /* BusinessMapView.swift */; };
+		4026877A271DC5C300016BB7 /* EditProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40268779271DC5C200016BB7 /* EditProductsView.swift */; };
+		4026877D271DCA6E00016BB7 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4026877C271DCA6E00016BB7 /* ProductCell.swift */; };
+		40268780271DCA9A00016BB7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4026877F271DCA9A00016BB7 /* Product.swift */; };
+		40268783272C850C00016BB7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40268782272C850B00016BB7 /* Message.swift */; };
+		40268787272C858300016BB7 /* ConversationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40268786272C858300016BB7 /* ConversationsViewModel.swift */; };
+		4026878B272C859100016BB7 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4026878A272C859100016BB7 /* ChatViewModel.swift */; };
+		4026878F272C888800016BB7 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4026878E272C888800016BB7 /* ChatView.swift */; };
+		40268792272C88F800016BB7 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40268791272C88F800016BB7 /* MessageView.swift */; };
+		40268795272C894900016BB7 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40268794272C894900016BB7 /* ChatBubble.swift */; };
+		40268798272C8F0D00016BB7 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40268797272C8F0D00016BB7 /* MessageInputView.swift */; };
+		40874389272D9FC500183AF0 /* BusinessDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40874388272D9FC500183AF0 /* BusinessDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +80,17 @@
 		4026873726FCFFDD00016BB7 /* BusinessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
 		4026873A26FD009200016BB7 /* BusinessDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailView.swift; sourceTree = "<group>"; };
 		4026873F26FE383E00016BB7 /* BusinessMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMapView.swift; sourceTree = "<group>"; };
+		40268779271DC5C200016BB7 /* EditProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProductsView.swift; sourceTree = "<group>"; };
+		4026877C271DCA6E00016BB7 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		4026877F271DCA9A00016BB7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		40268782272C850B00016BB7 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		40268786272C858300016BB7 /* ConversationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewModel.swift; sourceTree = "<group>"; };
+		4026878A272C859100016BB7 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		4026878E272C888800016BB7 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		40268791272C88F800016BB7 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		40268794272C894900016BB7 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		40268797272C8F0D00016BB7 /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
+		40874388272D9FC500183AF0 /* BusinessDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +152,8 @@
 			children = (
 				402686BF26F1097300016BB7 /* User.swift */,
 				402686C226F109D500016BB7 /* Business.swift */,
+				4026877F271DCA9A00016BB7 /* Product.swift */,
+				40268782272C850B00016BB7 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -137,6 +161,7 @@
 		402686AD26F103E800016BB7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4026878D272C887600016BB7 /* Messages */,
 				402686BB26F1083500016BB7 /* LaunchView.swift */,
 				402686D026F10CE400016BB7 /* Authentication */,
 				402686D826F10E8800016BB7 /* Onboarding */,
@@ -148,10 +173,12 @@
 		402686AE26F103EE00016BB7 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				40268785272C856600016BB7 /* Messages */,
 				402686C526F10B7300016BB7 /* AuthViewModel.swift */,
 				402686CD26F10C1F00016BB7 /* LocationViewModel.swift */,
 				4026870026F11C8A00016BB7 /* BusinessViewModel.swift */,
 				4026873426FCFE2500016BB7 /* BusinessListViewModel.swift */,
+				40874388272D9FC500183AF0 /* BusinessDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -236,6 +263,8 @@
 			children = (
 				402686F826F118B400016BB7 /* EditBusinessView.swift */,
 				4026870926F12F2300016BB7 /* EditHoursView.swift */,
+				40268779271DC5C200016BB7 /* EditProductsView.swift */,
+				4026877C271DCA6E00016BB7 /* ProductCell.swift */,
 			);
 			path = EditBusiness;
 			sourceTree = "<group>";
@@ -254,6 +283,26 @@
 				4026870426F12EFD00016BB7 /* TextArea.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		40268785272C856600016BB7 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				40268786272C858300016BB7 /* ConversationsViewModel.swift */,
+				4026878A272C859100016BB7 /* ChatViewModel.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		4026878D272C887600016BB7 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				4026878E272C888800016BB7 /* ChatView.swift */,
+				40268791272C88F800016BB7 /* MessageView.swift */,
+				40268794272C894900016BB7 /* ChatBubble.swift */,
+				40268797272C8F0D00016BB7 /* MessageInputView.swift */,
+			);
+			path = Messages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,26 +387,37 @@
 				402686C626F10B7400016BB7 /* AuthViewModel.swift in Sources */,
 				402686BC26F1083500016BB7 /* LaunchView.swift in Sources */,
 				402686C326F109D500016BB7 /* Business.swift in Sources */,
+				40268795272C894900016BB7 /* ChatBubble.swift in Sources */,
 				402686FE26F118D600016BB7 /* InspectBusinessView.swift in Sources */,
+				40874389272D9FC500183AF0 /* BusinessDetailViewModel.swift in Sources */,
 				402686DA26F10EA600016BB7 /* OnboardingView.swift in Sources */,
 				402686D626F10D0C00016BB7 /* RegistrationView.swift in Sources */,
 				4026870126F11C8A00016BB7 /* BusinessViewModel.swift in Sources */,
 				4026870526F12EFD00016BB7 /* TextArea.swift in Sources */,
 				4026869D26F103AA00016BB7 /* CapstoneApp.swift in Sources */,
 				402686CE26F10C1F00016BB7 /* LocationViewModel.swift in Sources */,
+				4026877A271DC5C300016BB7 /* EditProductsView.swift in Sources */,
+				40268792272C88F800016BB7 /* MessageView.swift in Sources */,
 				402686F126F115D600016BB7 /* BusinessListView.swift in Sources */,
+				40268783272C850C00016BB7 /* Message.swift in Sources */,
 				4026873B26FD009200016BB7 /* BusinessDetailView.swift in Sources */,
 				4026874026FE383E00016BB7 /* BusinessMapView.swift in Sources */,
 				402686EA26F115C600016BB7 /* ConversationsView.swift in Sources */,
 				4026873826FCFFDD00016BB7 /* BusinessCell.swift in Sources */,
+				4026877D271DCA6E00016BB7 /* ProductCell.swift in Sources */,
 				402686C026F1097300016BB7 /* User.swift in Sources */,
+				4026878F272C888800016BB7 /* ChatView.swift in Sources */,
 				402686D226F10CFB00016BB7 /* LoginView.swift in Sources */,
+				40268780271DCA9A00016BB7 /* Product.swift in Sources */,
 				4026873526FCFE2500016BB7 /* BusinessListViewModel.swift in Sources */,
 				402686E226F10F4500016BB7 /* HomeView.swift in Sources */,
+				40268787272C858300016BB7 /* ConversationsViewModel.swift in Sources */,
 				402686F926F118B400016BB7 /* EditBusinessView.swift in Sources */,
 				402686CA26F10BA600016BB7 /* Constants.swift in Sources */,
 				402686EE26F115CD00016BB7 /* ProfileView.swift in Sources */,
+				4026878B272C859100016BB7 /* ChatViewModel.swift in Sources */,
 				402686DE26F10EF300016BB7 /* LocationDeniedView.swift in Sources */,
+				40268798272C8F0D00016BB7 /* MessageInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

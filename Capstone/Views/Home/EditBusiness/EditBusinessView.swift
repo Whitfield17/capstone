@@ -139,6 +139,11 @@ struct EditBusinessView: View {
                                 self.sundayEndTime = businessViewModel.business?.sundayEndTime.dateValue() ?? Date()
                             }
                     }
+                    
+                    Divider()
+                    
+                    EditProductsView() 
+                    
                 }
             }
 

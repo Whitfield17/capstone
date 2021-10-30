@@ -23,6 +23,8 @@ class Business: Identifiable, ObservableObject {
     let latitude: Double
     let longitude: Double
     
+    //let products: [Product]
+    
     let openMonday: Bool
     let mondayStartTime: Timestamp
     let mondayEndTime: Timestamp
@@ -47,7 +49,7 @@ class Business: Identifiable, ObservableObject {
     
     init(dictionary: [String: Any]) {
         self.id = dictionary["id"] as? String ?? ""
-        self.ownerUid = dictionary["uid"] as? String ?? ""
+        self.ownerUid = dictionary["ownerUid"] as? String ?? ""
         self.businessName = dictionary["businessName"] as? String ?? ""
         self.description = dictionary["description"] as? String ?? ""
         self.websiteUrl = dictionary["websiteUrl"] as? String ?? ""

@@ -15,6 +15,7 @@ struct Constants {
     
     static let COLLECTION_USERS = Firestore.firestore().collection("users")
     static let COLLECTION_BUSINESSES = Firestore.firestore().collection("businesses")
+    static let COLLECTION_MESSAGES = Firestore.firestore().collection("messages")
     
     static var ANNOTATION_REUSE_ID = "business"
     
