@@ -10,8 +10,18 @@ import Firebase
 
 struct ProfileView: View {
     
+    @EnvironmentObject var authViewModel: AuthViewModel
+    
     var body: some View {
-        Text("Profile View")
+        VStack {
+            Text("Profile View")
+            
+            Button {
+                authViewModel.signOut()
+            } label: {
+                Text("Sign out")
+            }
+        }
     }
 }
 

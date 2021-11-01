@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40051E7B27303F0C007BA63E /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40051E7A27303F0C007BA63E /* ConversationCell.swift */; };
+		40051E7E27303F54007BA63E /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40051E7D27303F54007BA63E /* LazyView.swift */; };
 		4026869D26F103AA00016BB7 /* CapstoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4026869C26F103AA00016BB7 /* CapstoneApp.swift */; };
 		402686A126F103B300016BB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402686A026F103B300016BB7 /* Assets.xcassets */; };
 		402686A426F103B300016BB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402686A326F103B300016BB7 /* Preview Assets.xcassets */; };
@@ -51,6 +53,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40051E7A27303F0C007BA63E /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		40051E7D27303F54007BA63E /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		4026869926F103AA00016BB7 /* Capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4026869C26F103AA00016BB7 /* CapstoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneApp.swift; sourceTree = "<group>"; };
 		402686A026F103B300016BB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -216,7 +220,6 @@
 				402686E126F10F4500016BB7 /* HomeView.swift */,
 				402686FC26F118BA00016BB7 /* InspectBusiness */,
 				402686F726F1187900016BB7 /* EditBusiness */,
-				402686E826F115A700016BB7 /* Conversations */,
 				402686E726F1159F00016BB7 /* Profile */,
 				402686E626F1159800016BB7 /* List */,
 				402686E526F1159100016BB7 /* Map */,
@@ -250,14 +253,6 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		402686E826F115A700016BB7 /* Conversations */ = {
-			isa = PBXGroup;
-			children = (
-				402686E926F115C600016BB7 /* ConversationsView.swift */,
-			);
-			path = Conversations;
-			sourceTree = "<group>";
-		};
 		402686F726F1187900016BB7 /* EditBusiness */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				4026870426F12EFD00016BB7 /* TextArea.swift */,
+				40051E7D27303F54007BA63E /* LazyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -301,6 +297,8 @@
 				40268791272C88F800016BB7 /* MessageView.swift */,
 				40268794272C894900016BB7 /* ChatBubble.swift */,
 				40268797272C8F0D00016BB7 /* MessageInputView.swift */,
+				402686E926F115C600016BB7 /* ConversationsView.swift */,
+				40051E7A27303F0C007BA63E /* ConversationCell.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -390,7 +388,9 @@
 				40268795272C894900016BB7 /* ChatBubble.swift in Sources */,
 				402686FE26F118D600016BB7 /* InspectBusinessView.swift in Sources */,
 				40874389272D9FC500183AF0 /* BusinessDetailViewModel.swift in Sources */,
+				40051E7E27303F54007BA63E /* LazyView.swift in Sources */,
 				402686DA26F10EA600016BB7 /* OnboardingView.swift in Sources */,
+				40051E7B27303F0C007BA63E /* ConversationCell.swift in Sources */,
 				402686D626F10D0C00016BB7 /* RegistrationView.swift in Sources */,
 				4026870126F11C8A00016BB7 /* BusinessViewModel.swift in Sources */,
 				4026870526F12EFD00016BB7 /* TextArea.swift in Sources */,
