@@ -30,6 +30,7 @@ class BusinessViewModel: ObservableObject {
         let businessesDocRef = Constants.COLLECTION_BUSINESSES.document(user.businessId)
         
         //Get the latitude and longitude based off the given address string
+        //TODO: - If These values are empty the business will not be uploaded at all
         getCoordinate(address: address, city: city, province: province) { (location, error) in
             
             if error == nil {

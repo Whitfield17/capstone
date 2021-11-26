@@ -25,7 +25,7 @@ struct HomeView: View {
 
         if authViewModel.user?.accountType == "Personal" {
             TabView(selection: $selectedIndex) {
-                ProfileView()
+                ProfileView(user: authViewModel.user!)
                     .onTapGesture {
                         selectedIndex = 0
                     }

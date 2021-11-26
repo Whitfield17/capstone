@@ -50,6 +50,9 @@
 		40268795272C894900016BB7 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40268794272C894900016BB7 /* ChatBubble.swift */; };
 		40268798272C8F0D00016BB7 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40268797272C8F0D00016BB7 /* MessageInputView.swift */; };
 		40874389272D9FC500183AF0 /* BusinessDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40874388272D9FC500183AF0 /* BusinessDetailViewModel.swift */; };
+		40D0C492275011D500AB44B4 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D0C491275011D500AB44B4 /* SearchViewModel.swift */; };
+		40D0C4952750144300AB44B4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D0C4942750144300AB44B4 /* SearchBar.swift */; };
+		40D0C49827501E1100AB44B4 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D0C49727501E1000AB44B4 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +98,9 @@
 		40268794272C894900016BB7 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		40268797272C8F0D00016BB7 /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
 		40874388272D9FC500183AF0 /* BusinessDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailViewModel.swift; sourceTree = "<group>"; };
+		40D0C491275011D500AB44B4 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		40D0C4942750144300AB44B4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		40D0C49727501E1000AB44B4 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +189,8 @@
 				4026870026F11C8A00016BB7 /* BusinessViewModel.swift */,
 				4026873426FCFE2500016BB7 /* BusinessListViewModel.swift */,
 				40874388272D9FC500183AF0 /* BusinessDetailViewModel.swift */,
+				40D0C491275011D500AB44B4 /* SearchViewModel.swift */,
+				40D0C49727501E1000AB44B4 /* ProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -241,6 +249,7 @@
 				402686F026F115D600016BB7 /* BusinessListView.swift */,
 				4026873726FCFFDD00016BB7 /* BusinessCell.swift */,
 				4026873A26FD009200016BB7 /* BusinessDetailView.swift */,
+				40D0C4942750144300AB44B4 /* SearchBar.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -385,6 +394,7 @@
 				402686C626F10B7400016BB7 /* AuthViewModel.swift in Sources */,
 				402686BC26F1083500016BB7 /* LaunchView.swift in Sources */,
 				402686C326F109D500016BB7 /* Business.swift in Sources */,
+				40D0C492275011D500AB44B4 /* SearchViewModel.swift in Sources */,
 				40268795272C894900016BB7 /* ChatBubble.swift in Sources */,
 				402686FE26F118D600016BB7 /* InspectBusinessView.swift in Sources */,
 				40874389272D9FC500183AF0 /* BusinessDetailViewModel.swift in Sources */,
@@ -394,6 +404,7 @@
 				402686D626F10D0C00016BB7 /* RegistrationView.swift in Sources */,
 				4026870126F11C8A00016BB7 /* BusinessViewModel.swift in Sources */,
 				4026870526F12EFD00016BB7 /* TextArea.swift in Sources */,
+				40D0C49827501E1100AB44B4 /* ProfileViewModel.swift in Sources */,
 				4026869D26F103AA00016BB7 /* CapstoneApp.swift in Sources */,
 				402686CE26F10C1F00016BB7 /* LocationViewModel.swift in Sources */,
 				4026877A271DC5C300016BB7 /* EditProductsView.swift in Sources */,
@@ -406,6 +417,7 @@
 				4026873826FCFFDD00016BB7 /* BusinessCell.swift in Sources */,
 				4026877D271DCA6E00016BB7 /* ProductCell.swift in Sources */,
 				402686C026F1097300016BB7 /* User.swift in Sources */,
+				40D0C4952750144300AB44B4 /* SearchBar.swift in Sources */,
 				4026878F272C888800016BB7 /* ChatView.swift in Sources */,
 				402686D226F10CFB00016BB7 /* LoginView.swift in Sources */,
 				40268780271DCA9A00016BB7 /* Product.swift in Sources */,

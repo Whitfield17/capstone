@@ -8,20 +8,24 @@
 import SwiftUI
 
 struct BusinessListView: View {
-    @ObservedObject var businessListViewModel = BusinessListViewModel()
+    @State var searchText = ""
+    @ObservedObject var searchViewModel = SearchViewModel()
+    //@ObservedObject var businessListViewModel = BusinessListViewModel()
     
     var body: some View {
         ScrollView {
-            LazyVStack {
-                ForEach(businessListViewModel.businesses) { business in
+            SearchBar(text: $searchText)
+                .padding()
+            
+            VStack(alignment: .leading) {
+                ForEach(searchText.isEmpty ? searchViewModel.businesses : searchViewModel.filteredBusinesses(searchText)) { business in
+                    HStack { Spacer() }
+                    
                     NavigationLink(
-                        destination: BusinessDetailView(business: business),
-                        label: {
-                            BusinessCell(business: business)
-                        }).foregroundColor(.black)
+                        destination: LazyView(BusinessDetailView(business: business)),
+                        label: { BusinessCell(business: business) }).foregroundColor(.black)
                 }
-            }
-            .padding()
+            }.padding(.leading)
         }
     }
 }

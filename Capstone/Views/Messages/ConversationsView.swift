@@ -14,7 +14,6 @@ struct ConversationsView: View {
 
     var body: some View {
         ScrollView {
-            //LazyVStack only loads cells on an as needed basis
             VStack {
                 ForEach(viewModel.recentMessages) { message in
                     NavigationLink(
@@ -25,7 +24,6 @@ struct ConversationsView: View {
                 }
             }
             .padding()
-            
         }
     }
 }

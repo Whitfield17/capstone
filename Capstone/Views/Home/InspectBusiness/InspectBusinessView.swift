@@ -45,6 +45,12 @@ struct InspectBusinessView: View {
                 
                 Text("Sunday: \((businessViewModel.business?.openSunday ?? false) ? "\(sundayStartTime) - \(sundayEndTime)" : "Closed")")
             }
+            
+            Button {
+                authViewModel.signOut()
+            } label: {
+                Text("Sign out")
+            }
         }
         
         

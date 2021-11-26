@@ -23,6 +23,9 @@ class Business: Identifiable, ObservableObject {
     let latitude: Double
     let longitude: Double
     
+    let favourites: Int
+    let ratings: Int
+    
     //let products: [Product]
     
     let openMonday: Bool
@@ -83,5 +86,7 @@ class Business: Identifiable, ObservableObject {
         self.sundayStartTime = dictionary["sundayStartTime"] as? Timestamp ?? Timestamp(date: Date())
         self.sundayEndTime = dictionary["sundayEndTime"] as? Timestamp ?? Timestamp(date: Date())
         
+        self.favourites = dictionary["favourites"] as? Int ?? 0
+        self.ratings = dictionary["ratings"] as? Int ?? 0
     }
 }

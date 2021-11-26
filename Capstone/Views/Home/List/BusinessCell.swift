@@ -24,6 +24,7 @@ struct BusinessCell: View {
                     }
                     
                     Text(business.description)
+                    
                         
                 }
             }

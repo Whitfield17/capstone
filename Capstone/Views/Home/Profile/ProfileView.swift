@@ -9,24 +9,34 @@ import SwiftUI
 import Firebase
 
 struct ProfileView: View {
-    
+    let user: User
+    @ObservedObject var profileViewModel: ProfileViewModel
     @EnvironmentObject var authViewModel: AuthViewModel
     
-    var body: some View {
-        VStack {
-            Text("Profile View")
-            
-            Button {
-                authViewModel.signOut()
-            } label: {
-                Text("Sign out")
-            }
-        }
+    init(user: User) {
+        self.user = user
+        self.profileViewModel = ProfileViewModel(user: user)
     }
-}
-
-struct ProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileView()
+    
+    var body: some View {
+        ScrollView {
+            VStack {
+                Button {
+                    authViewModel.signOut()
+                } label: {
+                    Text("Sign out")
+                }
+                
+                ForEach(profileViewModel.businesses()) { business in
+                    NavigationLink(
+                        destination: LazyView(BusinessDetailView(business: business)),
+                        label: { BusinessCell(business: business) }
+                    )
+                    .foregroundColor(.black)
+                    .padding()
+                    
+                }
+            }.navigationTitle(user.firstName)
+        }
     }
 }
