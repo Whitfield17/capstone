@@ -56,7 +56,8 @@ class BusinessDetailViewModel: ObservableObject {
             
             if (numberOfRatings > 0) {
                 averageRating = Double(ratingTotal / numberOfRatings)
-                self.averageRating = round(averageRating * 10) / 10.0
+                //self.averageRating = round(averageRating * 10) / 10.0
+                self.averageRating = averageRating
             } 
 
             //Loop through each document and sum up the rating field

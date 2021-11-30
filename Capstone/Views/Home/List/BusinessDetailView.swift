@@ -125,11 +125,11 @@ struct BusinessDetailView: View {
                         })
                         
                         
-                    }.padding()
+                    }//.padding()
                     
-                    Text(businessDetailViewModel.averageRating > 0 ? "\(businessDetailViewModel.averageRating)" : "No ratings")
+                    Text(businessDetailViewModel.averageRating > 0 ? "Rating: \(businessDetailViewModel.averageRating)" : "No ratings")
                                             
-                }
+                }.padding()
                 
                 Divider()
                 

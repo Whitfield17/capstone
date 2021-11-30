@@ -19,14 +19,22 @@ struct ProfileView: View {
     }
     
     var body: some View {
-        ScrollView {
-            VStack {
+        VStack {
+            VStack(spacing: 8) {
+                Text("Logged in as: \(user.firstName)")
+                
+                Text("Account type: \(user.accountType)")
+                
                 Button {
                     authViewModel.signOut()
                 } label: {
                     Text("Sign out")
                 }
-                
+            }.padding()
+
+            Divider()
+            
+            ScrollView {
                 ForEach(profileViewModel.businesses()) { business in
                     NavigationLink(
                         destination: LazyView(BusinessDetailView(business: business)),
@@ -34,9 +42,10 @@ struct ProfileView: View {
                     )
                     .foregroundColor(.black)
                     .padding()
-                    
                 }
-            }.navigationTitle(user.firstName)
+            }
         }
+        
+
     }
 }
